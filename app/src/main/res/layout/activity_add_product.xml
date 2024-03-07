@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddProductActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:rotation="180"
+                android:src="@drawable/chevron_right_solid"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Add Product"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/image_upload_bro"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/category"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Category"
+                app:boxBackgroundColor="#EDECEC"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bodyType"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Body Type"
+                app:boxBackgroundColor="#EDECEC"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Name"
+                app:boxBackgroundColor="#EDECEC"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/shortMsg"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Short Description"
+                app:boxBackgroundColor="#EDECEC"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="top"
+                    android:inputType="textLongMessage" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/longMsg"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Long Description (Optional)"
+                app:boxBackgroundColor="#EDECEC"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:gravity="top"
+                    android:inputType="textLongMessage" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="12dp"
+                android:text="Upload" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
