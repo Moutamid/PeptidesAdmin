@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -30,6 +31,8 @@ public class AddProductActivity extends AppCompatActivity {
     ProductModel productModel;
     Uri image;
     ProgressDialog progressDialog;
+    ArrayAdapter<String> bodyGoals, categories;
+    String[] bodyGoalsList, categoriesList;
     private static final String TAG = "AddProductActivity";
 
     @Override
@@ -43,6 +46,15 @@ public class AddProductActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Please wait...");
         progressDialog.setCancelable(false);
+
+        bodyGoalsList = getResources().getStringArray(R.array.bodyGoals);
+        categoriesList = getResources().getStringArray(R.array.categories);
+
+        bodyGoals = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, bodyGoalsList);
+        categories = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, categoriesList);
+
+        binding.bodyGoalsList.setAdapter(bodyGoals);
+        binding.categoryList.setAdapter(categories);
 
         productModel = (ProductModel) Stash.getObject(Constants.PASS, ProductModel.class);
         if (productModel != null) {

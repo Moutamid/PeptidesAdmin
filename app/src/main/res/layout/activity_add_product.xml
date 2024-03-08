@@ -74,44 +74,51 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/category"
-                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:hint="Category"
                 app:boxBackgroundColor="#EDECEC"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
                 app:boxCornerRadiusTopEnd="12dp"
                 app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="@color/green"
+                app:hintEnabled="true"
+                android:layout_marginTop="10dp"
                 app:boxStrokeWidth="0dp"
-                app:boxStrokeWidthFocused="0dp">
+                app:boxStrokeWidthFocused="0dp"
+                app:hintTextColor="@color/green">
 
-                <com.google.android.material.textfield.TextInputEditText
+                <AutoCompleteTextView
+                    android:id="@+id/categoryList"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:inputType="textPersonName" />
+                    android:layout_height="wrap_content" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/bodyType"
-                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Body Type"
+                android:hint="Body Goals"
                 app:boxBackgroundColor="#EDECEC"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
                 app:boxCornerRadiusTopEnd="12dp"
                 app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="@color/green"
+                app:hintEnabled="true"
+                android:layout_marginTop="5dp"
                 app:boxStrokeWidth="0dp"
-                app:boxStrokeWidthFocused="0dp">
+                app:boxStrokeWidthFocused="0dp"
+                app:hintTextColor="@color/green">
 
-                <com.google.android.material.textfield.TextInputEditText
+                <AutoCompleteTextView
+                    android:id="@+id/bodyGoalsList"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:inputType="textPersonName" />
+                    android:layout_height="wrap_content" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

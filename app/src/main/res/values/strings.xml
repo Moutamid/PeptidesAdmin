@@ -2,4 +2,38 @@
     <string name="app_name">Peptides Admin</string>
     <string name="dot">•</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda at commodi optio quidem ullam.</string>
+
+    <string-array name="bodyGoals">
+        <item>To Burn Fat</item>
+        <item>To Gain Muscle</item>
+        <item>To Improve Strength</item>
+        <item>To Improve Muscle Recovery</item>
+        <item>To Look Younger</item>
+        <item>To Help Repair Depression, Brain Disease, Concentration, Memory</item>
+        <item>To Repair Heart Blood Issues</item>
+        <item>To Balance Hormones</item>
+        <item>To Lose Weight</item>
+        <item>To Recover From An Injury</item>
+        <item>To Get Cholesterol Support</item>
+        <item>To Improve My AntiBiotics</item>
+        <item>To Get Cancer Support</item>
+        <item>To Get Eye Support</item>
+        <item>To Improve Fertility</item>
+        <item>To Grow My Hair</item>
+        <item>To Reduce Inflammation</item>
+        <item>To Increase My Libido</item>
+        <item>To Manage My Insulin</item>
+        <item>To Boost My Immunity</item>
+        <item>To Get PCT Support</item>
+        <item>To Improve My Sleep</item>
+        <item>To Tan Better</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>PEPTIDES</item>
+        <item>PEPTIDE – NASAL SPRAYS</item>
+        <item>PEPTIDE – BLENDS</item>
+        <item>SARMS – Selective Androgen Receptor Modulators</item>
+    </string-array>
+
 </resources>
