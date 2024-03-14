@@ -47,13 +47,13 @@ public class AddProductActivity extends AppCompatActivity {
         progressDialog.setMessage("Please wait...");
         progressDialog.setCancelable(false);
 
-        bodyGoalsList = getResources().getStringArray(R.array.bodyGoals);
+     //   bodyGoalsList = getResources().getStringArray(R.array.bodyGoals);
         categoriesList = getResources().getStringArray(R.array.categories);
 
-        bodyGoals = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, bodyGoalsList);
+      //  bodyGoals = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, bodyGoalsList);
         categories = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, categoriesList);
 
-        binding.bodyGoalsList.setAdapter(bodyGoals);
+       // binding.bodyGoalsList.setAdapter(bodyGoals);
         binding.categoryList.setAdapter(categories);
 
         productModel = (ProductModel) Stash.getObject(Constants.PASS, ProductModel.class);
@@ -143,6 +143,10 @@ public class AddProductActivity extends AppCompatActivity {
             return false;
         }
         if (binding.shortMsg.getEditText().getText().toString().isEmpty()) {
+            Toast.makeText(this, "Short Description is Empty", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (binding.longMsg.getEditText().getText().toString().isEmpty()) {
             Toast.makeText(this, "Short Description is Empty", Toast.LENGTH_SHORT).show();
             return false;
         }
