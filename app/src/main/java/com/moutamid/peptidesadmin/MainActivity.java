@@ -1,15 +1,15 @@
 package com.moutamid.peptidesadmin;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -66,13 +66,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 progressDialog.dismiss();
-                if (snapshot.exists()){
+                if (snapshot.exists()) {
                     list.clear();
-                    for (DataSnapshot dataSnapshot: snapshot.getChildren()){
+                    for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                         ProductModel model = dataSnapshot.getValue(ProductModel.class);
                         list.add(model);
                     }
-
+                    adapter = new ProductsAdapter(MainActivity.this, list);
+                    binding.products.setAdapter(adapter);
+                } else {
+                    list.clear();
                     adapter = new ProductsAdapter(MainActivity.this, list);
                     binding.products.setAdapter(adapter);
                 }

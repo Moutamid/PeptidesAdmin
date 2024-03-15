@@ -2,11 +2,11 @@ package com.moutamid.peptidesadmin.models;
 
 public class ProductModel {
     String ID, name, category, bodyType, shortDesc, longDesc, image;
-
+    boolean isSARMS;
     public ProductModel() {
     }
 
-    public ProductModel(String ID, String name, String category, String bodyType, String shortDesc, String longDesc, String image) {
+    public ProductModel(String ID, String name, String category, String bodyType, String shortDesc, String longDesc, String image, boolean isSARMS) {
         this.ID = ID;
         this.name = name;
         this.category = category;
@@ -14,6 +14,15 @@ public class ProductModel {
         this.shortDesc = shortDesc;
         this.longDesc = longDesc;
         this.image = image;
+        this.isSARMS = isSARMS;
+    }
+
+    public boolean isSARMS() {
+        return isSARMS;
+    }
+
+    public void setSARMS(boolean SARMS) {
+        isSARMS = SARMS;
     }
 
     public String getID() {

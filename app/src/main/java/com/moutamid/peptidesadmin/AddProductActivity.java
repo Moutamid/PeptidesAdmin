@@ -7,14 +7,12 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.fxn.stash.Stash;
 import com.github.dhaval2404.imagepicker.ImagePicker;
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.UploadTask;
 import com.moutamid.peptidesadmin.databinding.ActivityAddProductBinding;
@@ -47,13 +45,13 @@ public class AddProductActivity extends AppCompatActivity {
         progressDialog.setMessage("Please wait...");
         progressDialog.setCancelable(false);
 
-     //   bodyGoalsList = getResources().getStringArray(R.array.bodyGoals);
+        //   bodyGoalsList = getResources().getStringArray(R.array.bodyGoals);
         categoriesList = getResources().getStringArray(R.array.categories);
 
-      //  bodyGoals = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, bodyGoalsList);
+        //  bodyGoals = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, bodyGoalsList);
         categories = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, categoriesList);
 
-       // binding.bodyGoalsList.setAdapter(bodyGoals);
+        // binding.bodyGoalsList.setAdapter(bodyGoals);
         binding.categoryList.setAdapter(categories);
 
         productModel = (ProductModel) Stash.getObject(Constants.PASS, ProductModel.class);
@@ -74,7 +72,7 @@ public class AddProductActivity extends AppCompatActivity {
                 progressDialog.show();
                 if (productModel == null) uploadData();
                 else {
-                    if (image != null){
+                    if (image != null) {
                         uploadData();
                     } else updateData(productModel.getImage());
                 }
@@ -84,7 +82,7 @@ public class AddProductActivity extends AppCompatActivity {
     }
 
     private void updateData(String imageLink) {
-        if (productModel==null) {
+        if (productModel == null) {
             productModel = new ProductModel();
             productModel.setID(UUID.randomUUID().toString());
         }
@@ -94,13 +92,14 @@ public class AddProductActivity extends AppCompatActivity {
         productModel.setName(binding.name.getEditText().getText().toString());
         productModel.setShortDesc(binding.shortMsg.getEditText().getText().toString());
         productModel.setLongDesc(binding.longMsg.getEditText().getText().toString());
+        productModel.setSARMS(binding.sarms.isChecked());
 
         Constants.databaseReference().child(Constants.PRODUCTS).child(productModel.getID()).setValue(productModel)
                 .addOnSuccessListener(unused -> {
                     progressDialog.dismiss();
                     Toast.makeText(AddProductActivity.this, "Product Uploaded Successfully", Toast.LENGTH_SHORT).show();
                     onBackPressed();
-                }).addOnFailureListener(e  -> {
+                }).addOnFailureListener(e -> {
                     progressDialog.dismiss();
                     Toast.makeText(AddProductActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                 });
@@ -159,6 +158,7 @@ public class AddProductActivity extends AppCompatActivity {
         binding.name.getEditText().setText(productModel.getName());
         binding.shortMsg.getEditText().setText(productModel.getShortDesc());
         binding.longMsg.getEditText().setText(productModel.getLongDesc());
+        binding.sarms.setChecked(productModel.isSARMS());
         Glide.with(AddProductActivity.this).load(productModel.getImage()).placeholder(R.drawable.image_upload_bro).into(binding.image);
     }
 
