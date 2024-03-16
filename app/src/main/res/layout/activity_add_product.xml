@@ -193,7 +193,7 @@
                 android:id="@+id/sarms"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Is this SARMS Product?" />
+                android:text="This product does not use the calculator" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/upload"
