@@ -1,20 +1,29 @@
 package com.moutamid.peptidesadmin.models;
 
 public class ProductModel {
-    String ID, name, category, bodyType, shortDesc, longDesc, image;
+    String ID, name, category, bodyType, doseInfo, shortDesc, longDesc, image;
     boolean isSARMS;
     public ProductModel() {
     }
 
-    public ProductModel(String ID, String name, String category, String bodyType, String shortDesc, String longDesc, String image, boolean isSARMS) {
+    public ProductModel(String ID, String name, String category, String bodyType, String doseInfo, String shortDesc, String longDesc, String image, boolean isSARMS) {
         this.ID = ID;
         this.name = name;
         this.category = category;
         this.bodyType = bodyType;
+        this.doseInfo = doseInfo;
         this.shortDesc = shortDesc;
         this.longDesc = longDesc;
         this.image = image;
         this.isSARMS = isSARMS;
+    }
+
+    public String getDoseInfo() {
+        return doseInfo;
+    }
+
+    public void setDoseInfo(String doseInfo) {
+        this.doseInfo = doseInfo;
     }
 
     public boolean isSARMS() {

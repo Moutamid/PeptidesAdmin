@@ -92,6 +92,7 @@ public class AddProductActivity extends AppCompatActivity {
         productModel.setName(binding.name.getEditText().getText().toString());
         productModel.setShortDesc(binding.shortMsg.getEditText().getText().toString());
         productModel.setLongDesc(binding.longMsg.getEditText().getText().toString());
+        productModel.setDoseInfo(binding.doseInfo.getEditText().getText().toString());
         productModel.setSARMS(binding.sarms.isChecked());
 
         Constants.databaseReference().child(Constants.PRODUCTS).child(productModel.getID()).setValue(productModel)
