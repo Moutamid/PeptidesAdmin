@@ -146,6 +146,10 @@ public class AddProductActivity extends AppCompatActivity {
             Toast.makeText(this, "Short Description is Empty", Toast.LENGTH_SHORT).show();
             return false;
         }
+        if (binding.sarms.isChecked() && binding.doseInfo.getEditText().getText().toString().isEmpty()){
+            Toast.makeText(this, "Dose info is Empty", Toast.LENGTH_SHORT).show();
+            return false;
+        }
         if (binding.longMsg.getEditText().getText().toString().isEmpty()) {
             Toast.makeText(this, "Short Description is Empty", Toast.LENGTH_SHORT).show();
             return false;
@@ -154,11 +158,13 @@ public class AddProductActivity extends AppCompatActivity {
     }
 
     private void updateView() {
+        binding.title.setText("Edit Product");
         binding.category.getEditText().setText(productModel.getCategory());
         binding.bodyType.getEditText().setText(productModel.getBodyType());
         binding.name.getEditText().setText(productModel.getName());
         binding.shortMsg.getEditText().setText(productModel.getShortDesc());
         binding.longMsg.getEditText().setText(productModel.getLongDesc());
+        binding.doseInfo.getEditText().setText(productModel.getDoseInfo());
         binding.sarms.setChecked(productModel.isSARMS());
         Glide.with(AddProductActivity.this).load(productModel.getImage()).placeholder(R.drawable.image_upload_bro).into(binding.image);
     }
