@@ -1,269 +1,46 @@
 {
   "project_info": {
-    "project_number": "445765053911",
-    "firebase_url": "https://multistreamz-10cba-default-rtdb.firebaseio.com",
-    "project_id": "multistreamz-10cba",
-    "storage_bucket": "multistreamz-10cba.appspot.com"
+    "project_number": "606889936338",
+    "firebase_url": "https://research-peptide-1554745730110-default-rtdb.firebaseio.com",
+    "project_id": "research-peptide-1554745730110",
+    "storage_bucket": "research-peptide-1554745730110.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:445765053911:android:2efd8e796226755195af92",
-        "android_client_info": {
-          "package_name": "com.moutamid.callmanager"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyA_sd758EZZxVITvxZIxVSa-BtbSB4Tr5I"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:445765053911:android:84a18fe381afa9a695af92",
-        "android_client_info": {
-          "package_name": "com.moutamid.daiptv"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyA_sd758EZZxVITvxZIxVSa-BtbSB4Tr5I"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:445765053911:android:69962fec84233c8295af92",
-        "android_client_info": {
-          "package_name": "com.moutamid.moneytransfer"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyA_sd758EZZxVITvxZIxVSa-BtbSB4Tr5I"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:445765053911:android:6d6196b2ce3b4e8095af92",
-        "android_client_info": {
-          "package_name": "com.moutamid.moneytransferadmin"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyA_sd758EZZxVITvxZIxVSa-BtbSB4Tr5I"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:445765053911:android:37c567cf4f5ed38b95af92",
+        "mobilesdk_app_id": "1:606889936338:android:a3d8f8a793f5baabcc740b",
         "android_client_info": {
           "package_name": "com.moutamid.peptidesadmin"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyA_sd758EZZxVITvxZIxVSa-BtbSB4Tr5I"
+          "current_key": "AIzaSyAmCmscRonbITnC4TvoMx2254lKl_oAhxQ"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:445765053911:android:11f1f55f581bb31695af92",
+        "mobilesdk_app_id": "1:606889936338:android:dd1d750f00aedcf8cc740b",
         "android_client_info": {
           "package_name": "com.moutamid.peptidesapp"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyA_sd758EZZxVITvxZIxVSa-BtbSB4Tr5I"
+          "current_key": "AIzaSyAmCmscRonbITnC4TvoMx2254lKl_oAhxQ"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:445765053911:android:1528d332a513981f95af92",
-        "android_client_info": {
-          "package_name": "com.moutamid.sprachelernen"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyA_sd758EZZxVITvxZIxVSa-BtbSB4Tr5I"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:445765053911:android:71dc4adcd38fac6295af92",
-        "android_client_info": {
-          "package_name": "com.moutamid.sprachelernenadmin"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyA_sd758EZZxVITvxZIxVSa-BtbSB4Tr5I"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:445765053911:android:bcc7d5ff1cbcebcc95af92",
-        "android_client_info": {
-          "package_name": "com.moutamid.tvplayer"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyA_sd758EZZxVITvxZIxVSa-BtbSB4Tr5I"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "445765053911-db684sdt4lqvbde6h8rdplser2tu0k2v.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
