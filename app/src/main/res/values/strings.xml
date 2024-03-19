@@ -30,10 +30,14 @@
     </string-array>
 
     <string-array name="categories">
-        <item>PEPTIDES</item>
-        <item>PEPTIDE – NASAL SPRAYS</item>
-        <item>PEPTIDE – BLENDS</item>
-        <item>SARMS – Selective Androgen Receptor Modulators</item>
+        <item>Peptides</item>
+        <item>Peptide Blends</item>
+        <item>Peptide Nasal Sprays</item>
+        <item>Peptide Drops</item>
+        <item>Peptide Serums</item>
+        <item>Amino Acid Tablets</item>
+        <item>SARMS Capsules</item>
+        <item>SARMS Capsule Blends</item>
     </string-array>
 
 </resources>
