@@ -113,7 +113,7 @@
                 app:hintEnabled="true"
                 app:helperTextEnabled="true"
                 app:helperText="Burn Fat, Look Younger ... e.t.c"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 app:boxStrokeWidth="0dp"
                 app:boxStrokeWidthFocused="0dp"
                 app:hintTextColor="@color/green">
@@ -127,7 +127,8 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/name"
-                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Product Name"
@@ -148,32 +149,11 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/doseInfo"
-                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Dosage Information"
-                app:boxBackgroundColor="#EDECEC"
-                app:boxCornerRadiusBottomEnd="12dp"
-                app:boxCornerRadiusBottomStart="12dp"
-                app:boxCornerRadiusTopEnd="12dp"
-                app:boxCornerRadiusTopStart="12dp"
-                app:boxStrokeWidth="0dp"
-                app:boxStrokeWidthFocused="0dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:gravity="top"
-                    android:inputType="textImeMultiLine" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/shortMsg"
-                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Short Description"
+                android:layout_marginTop="10dp"
                 app:boxBackgroundColor="#EDECEC"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
@@ -191,8 +171,35 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/shortMsg"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Short Description"
+                app:boxBackgroundColor="#EDECEC"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="top"
+                    android:scrollbars="vertical"
+                    android:isScrollContainer="true"
+                    android:nestedScrollingEnabled="true"
+                    android:inputType="textMultiLine" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/longMsg"
-                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Long Description (Optional)"
