@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
@@ -93,6 +94,7 @@ public class AddProductActivity extends AppCompatActivity {
         productModel.setShortDesc(binding.shortMsg.getEditText().getText().toString());
         productModel.setLongDesc(binding.longMsg.getEditText().getText().toString());
         productModel.setDoseInfo(binding.doseInfo.getEditText().getText().toString());
+        productModel.setLink(binding.link.getEditText().getText().toString());
         productModel.setSARMS(binding.sarms.isChecked());
 
         Constants.databaseReference().child(Constants.PRODUCTS).child(productModel.getID()).setValue(productModel)
@@ -154,6 +156,14 @@ public class AddProductActivity extends AppCompatActivity {
             Toast.makeText(this, "Short Description is Empty", Toast.LENGTH_SHORT).show();
             return false;
         }
+        if (binding.link.getEditText().getText().toString().isEmpty()) {
+            Toast.makeText(this, "Product Link is Empty", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (!Patterns.WEB_URL.matcher(binding.link.getEditText().getText().toString()).matches()){
+            Toast.makeText(this, "Product Link is not valid", Toast.LENGTH_SHORT).show();
+            return false;
+        }
         return true;
     }
 
@@ -165,6 +175,8 @@ public class AddProductActivity extends AppCompatActivity {
         binding.shortMsg.getEditText().setText(productModel.getShortDesc());
         binding.longMsg.getEditText().setText(productModel.getLongDesc());
         binding.doseInfo.getEditText().setText(productModel.getDoseInfo());
+        String link = productModel.getLink() != null ? productModel.getLink() : "";
+        binding.link.getEditText().setText(link);
         binding.sarms.setChecked(productModel.isSARMS());
         Glide.with(AddProductActivity.this).load(productModel.getImage()).placeholder(R.drawable.image_upload_bro).into(binding.image);
     }
