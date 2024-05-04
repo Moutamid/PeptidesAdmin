@@ -25,18 +25,29 @@
 
     </androidx.cardview.widget.CardView>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/easter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/search"
+        android:layout_below="@id/toolbar"
+        android:layout_marginHorizontal="12dp"
         android:layout_marginTop="10dp"
+        android:text="Enable Easter Egg"
+        android:checked="true"
+        android:textSize="18sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/easter"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="10dp"
+        android:hint="Search By Name"
         app:boxCornerRadiusBottomEnd="12dp"
         app:boxCornerRadiusBottomStart="12dp"
         app:boxCornerRadiusTopEnd="12dp"
-        app:boxCornerRadiusTopStart="12dp"
-        android:layout_below="@id/toolbar"
-        android:layout_marginHorizontal="12dp"
-        android:hint="Search By Name">
+        app:boxCornerRadiusTopStart="12dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -48,19 +59,19 @@
         android:id="@+id/products"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/search"
         android:layout_marginTop="10dp"
-        tools:listitem="@layout/product_item"
-        android:layout_below="@id/search" />
+        tools:listitem="@layout/product_item" />
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="25dp"
         android:text="Add Product"
-        app:backgroundTint="@color/green"
         android:textColor="@color/white"
-        android:layout_margin="25dp" />
+        app:backgroundTint="@color/green" />
 
 </RelativeLayout>

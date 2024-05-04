@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.widget.CompoundButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -42,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
         binding.products.setLayoutManager(new LinearLayoutManager(this));
         binding.products.setHasFixedSize(false);
+
+        binding.easter.setOnCheckedChangeListener((buttonView, isChecked) -> Constants.databaseReference().child(Constants.EASTER).setValue(isChecked));
 
         binding.search.getEditText().addTextChangedListener(new TextWatcher() {
             @Override

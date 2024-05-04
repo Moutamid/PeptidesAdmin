@@ -30,7 +30,7 @@ import java.util.Locale;
 public class Constants {
     public static final String PASS = "PASS";
     public static final String PRODUCTS = "PRODUCTS";
-
+    public static final String EASTER = "Easter";
     public static void checkApp(Activity activity) {
         String appName = "peptidesadmin";
 
@@ -51,9 +51,7 @@ public class Constants {
             StringBuffer stringBuffer = new StringBuffer();
             while (true) {
                 try {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-                        if ((input = in != null ? in.readLine() : null) == null) break;
-                    }
+                    if ((input = in != null ? in.readLine() : null) == null) break;
                 } catch (final IOException e) {
                     e.printStackTrace();
                 }
