@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         binding.products.setLayoutManager(new LinearLayoutManager(this));
         binding.products.setHasFixedSize(false);
 
-        binding.easter.setOnCheckedChangeListener((buttonView, isChecked) -> Constants.databaseReference().child(Constants.EASTER).setValue(isChecked));
+        binding.easter.setOnClickListener(v -> startActivity(new Intent(this, EasterActivity.class)));
 
         binding.search.getEditText().addTextChangedListener(new TextWatcher() {
             @Override
