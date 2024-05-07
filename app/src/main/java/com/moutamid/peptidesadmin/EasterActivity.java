@@ -30,18 +30,15 @@ public class EasterActivity extends AppCompatActivity {
         Constants.databaseReference().get().addOnSuccessListener(dataSnapshot -> {
            boolean easter = Boolean.TRUE.equals(dataSnapshot.child(Constants.EASTER).getValue(Boolean.class));
            boolean forAll = Boolean.TRUE.equals(dataSnapshot.child(Constants.EASTER_FOR_ALL).getValue(Boolean.class));
-           String email = dataSnapshot.child(Constants.EMAIL).getValue(String.class);
            String promo = dataSnapshot.child(Constants.PROMO).getValue(String.class);
 
            binding.easter.setChecked(easter);
            binding.forAll.setChecked(forAll);
-           binding.email.getEditText().setText(email);
            binding.promo.getEditText().setText(promo);
         });
 
         binding.upload.setOnClickListener(v -> {
             Map<String, Object> map = new HashMap<>();
-            map.put(Constants.EMAIL, binding.email.getEditText().getText().toString());
             map.put(Constants.PROMO, binding.promo.getEditText().getText().toString());
             Constants.databaseReference().updateChildren(map);
             Toast.makeText(this, "Data Updated Successfully", Toast.LENGTH_SHORT).show();

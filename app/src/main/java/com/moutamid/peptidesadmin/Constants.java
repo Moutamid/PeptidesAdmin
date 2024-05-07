@@ -30,7 +30,7 @@ import java.util.Locale;
 public class Constants {
     public static final String PASS = "PASS";
     public static final String PRODUCTS = "PRODUCTS";
-    public static final String EMAIL = "EMAIL";
+    public static final String IS_ADMIN = "IS_ADMIN";
     public static final String PROMO = "PROMO";
     public static final String EASTER = "Easter";
     public static final String EASTER_FOR_ALL = "EASTER_FOR_ALL";
