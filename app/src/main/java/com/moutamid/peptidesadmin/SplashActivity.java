@@ -17,7 +17,7 @@ public class SplashActivity extends AppCompatActivity {
         binding = ActivitySplashBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        Glide.with(this).load(R.drawable.logo_05).into(binding.imageView);
+        Glide.with(this).load(R.drawable.logo_gif).into(binding.imageView);
 
         new Handler().postDelayed(() -> {
             startActivity(new Intent(SplashActivity.this, MainActivity.class));
